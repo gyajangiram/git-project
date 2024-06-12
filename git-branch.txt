@@ -1,0 +1,39 @@
+Create Branches:
+=================
+[root@Controller data]# git branch
+* master
+[root@Controller data]#
+[root@Controller data]# git branch feature
+[root@Controller data]#
+
+[root@Controller data]# git branch
+  feature
+* master
+[root@Controller data]#
+
+[root@Controller data]# git branch hot-fixes
+[root@Controller data]# git branch release-1.0
+[root@Controller data]#
+[root@Controller data]#
+[root@Controller data]# git branch
+* feature
+  hot-fixes
+  master
+  release-1.0
+[root@Controller data]# git branch -M main
+[root@Controller data]#
+
+[root@Controller data]# git branch
+  hot-fixes
+* main
+  master
+  release-1.0
+[root@Controller data]# git branch feature-1.0
+[root@Controller data]#
+
+[root@Controller data]# git branch
+  feature-1.0
+  hot-fixes
+* main
+  master
+  release-1.0
