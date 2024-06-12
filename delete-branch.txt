@@ -1,0 +1,22 @@
+[root@Controller data]# git branch
+  checkout
+  delete
+  feature-1.0
+  hot-fixes
+* main
+  master
+  release-1.0
+  remove
+[root@Controller data]# git branch --delete checkout
+Deleted branch checkout (was 07a13e3).
+[root@Controller data]# git branch --delete delete remove
+Deleted branch delete (was 07a13e3).
+Deleted branch remove (was 07a13e3).
+
+[root@Controller data]# git branch
+  feature-1.0
+  hot-fixes
+* main
+  master
+  release-1.0
+

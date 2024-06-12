@@ -1,0 +1,97 @@
+I have created the file in the feature branch and commited to the Feture branch.
+Then from git log I have copied the commit id and pushed to the main branch.
+
+
+######################################################################
+[root@Controller data]# cat feature-file.txt
+Commited this file from the feature branch
+
+######################################################################
+
+
+[root@Controller data]# git log
+commit 07a13e331d24f9a87729c6146116ce974cce4f23 (HEAD -> feature-1.0, origin/maste                                                                                                            r, release-1.0, master, hot-fixes)
+Merge: 14e9b29 2834a63
+Author: Ramakrishna Gyajangi <gyajangi.ram@gmail.com>
+Date:   Wed Jun 12 19:31:05 2024 +0000
+
+    check the issue
+
+    Mnd changes in the ssh-http fileerge branch 'master' of https://github.com/gya                                                                                                            jangiram/git-project
+
+######################################################################
+[root@Controller data]# git add .
+[root@Controller data]# git commit -m "commited from feature"
+[feature-1.0 3e063e2] commited from feature
+ 2 files changed, 3 insertions(+)
+ create mode 100644 feature-file.txt
+ create mode 100644 vi
+[root@Controller data]# git push
+fatal: The current branch feature-1.0 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-1.0
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+######################################################################
+
+
+[root@Controller data]#  git push --set-upstream origin feature-1.0
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 398 bytes | 398.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-1.0' on GitHub by visiting:
+remote:      https://github.com/gyajangiram/git-project/pull/new/feature-1.0
+remote:
+To https://github.com/gyajangiram/git-project.git
+ * [new branch]      feature-1.0 -> feature-1.0
+branch 'feature-1.0' set up to track 'origin/feature-1.0'.
+[root@Controller data]#
+
+######################################################################
+
+[root@Controller data]# git log feature-file.txt
+commit 3e063e2677757381633c9b100c97de512f97a3d4 (HEAD -> feature-1.0, origin/featu                                                                                                            re-1.0)
+Author: Ramakrishna Gyajangi <gyajangi.ram@gmail.com>
+Date:   Wed Jun 12 22:46:05 2024 +0000
+
+######################################################################
+
+
+[root@Controller data]# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[root@Controller data]# git cherry-pick 3e063e2677757381633c9b100c97de512f97a3d4
+[main 6a6dd95] commited from feature
+ Date: Wed Jun 12 22:46:05 2024 +0000
+ 2 files changed, 3 insertions(+)
+ create mode 100644 feature-file.txt
+ create mode 100644 vi
+
+######################################################################
+
+[root@Controller data]# git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[root@Controller data]# git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gyajangiram/git-project.git
+   3b0a95b..6a6dd95  main -> main
+[root@Controller data]#
+
+
+######################################################################
