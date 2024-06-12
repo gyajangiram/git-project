@@ -1,0 +1,12 @@
+[root@Controller .git]# git config credential.helper store
+[root@Controller .git]# git push -u origin master
+Username for 'https://github.com': gyajangiram
+Password for 'https://gyajangiram@github.com': ***********
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 260 bytes | 260.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gyajangiram/git-project.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+[root@Controller .git]# 
