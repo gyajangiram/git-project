@@ -1,0 +1,21 @@
+[root@Controller data]# git log --graph --oneline
+* 818c690 (HEAD -> master, origin/master) remove vi file
+* 7c0ea26 added the git ignore file
+* cd5b7e8 (origin/main, origin/hot-fixes, main, hot-fixes) added config & reset command files
+* b6b3932 updated cherry-pick cmds
+* 6a6dd95 commited from feature
+* 3b0a95b Initilise the file comd
+* 9303cb4 creds store cmd
+* 1f49881 delete-branch
+* 1dc22d6 delete-branch
+* 30b4103 upstream-cmd
+* 48de53a added the branch files
+*   07a13e3 check the issue
+|\
+| * 2834a63 Update git-ssh-http.txt
+* | 14e9b29  commited-changes
+|/
+* 031a033 added the ssh and htps config files
+* 5877273 Add second file
+* cb04bad First file commited
+[root@Controller data]#
