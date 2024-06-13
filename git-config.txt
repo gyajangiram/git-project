@@ -1,0 +1,37 @@
+Git Configuration details:
+###########################
+
+Command Reference:
+
+
+[root@Controller data]# git config --list
+user.email=xxxxxx.xxxxx@gmail.com
+user.name=Ram G
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/gyajangiram/git-project.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+credential.helper=store
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+pull.rebase=false
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+branch.feature-1.0.remote=origin
+branch.feature-1.0.merge=refs/heads/feature-1.0
+branch.hot-fixes.remote=origin
+branch.hot-fixes.merge=refs/heads/hot-fixes
+###############################################################
+
+Command Syntax :
+
+git config --global <parameter> <Value>
+
+git config --global user.name “[firstname lastname]”
+
+git config --global user.email “[valid-email]”
+
+###############################################################
+Configuring user information used across all local repositories
